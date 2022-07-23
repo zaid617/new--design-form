@@ -1,6 +1,6 @@
 let users = []
 let loggdins = {}
-let page = location.href.split("./");
+let page = location.href.split("/");
 
 
 function AllUsers() {
