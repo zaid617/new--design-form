@@ -1,26 +1,26 @@
 let users = []
 let loggdins = {}
-let page=window.location.href.split("/");
+let page = location.href.split("./");
 
 
-function AllUsers(){
-    let takeUser=localStorage.getItem("usersItem")
+function AllUsers() {
+    let takeUser = localStorage.getItem("usersItem")
     let loggdin = localStorage.getItem("LoginItem")
-    loggdins=JSON.parse(loggdin)||{}
-    users=JSON.parse(takeUser)||[]
+    loggdins = JSON.parse(loggdin) || {}
+    users = JSON.parse(takeUser) || []
 
 }
 AllUsers()
 
 
 function dashboard() {
-    
-    document.getElementById('name2').value ="Name :" + loggdins.userFirstName
-    document.getElementById('dob2').value ="Date of birth :" + loggdins.dob
-    document.getElementById('number2').value ="Mobile: " + loggdins.userEmail
+
+    document.getElementById('name2').value = "Name :" + loggdins.userFirstName
+    document.getElementById('dob2').value = "Date of birth :" + loggdins.dob
+    document.getElementById('number2').value = "Mobile: " + loggdins.userEmail
 }
 
-function signup () {
+function signup() {
     let fName = document.getElementById("firstName").value
     let surName = document.getElementById("surName").value
     let email = document.getElementById("number").value
@@ -30,8 +30,8 @@ function signup () {
     let error2 = document.getElementById('error2')
     let error = document.getElementById('error')
     let login = document.querySelector('.login')
-   
-    
+
+
     if (password === cpassword) {
         let newUser = {
             userFirstName: fName,
@@ -39,7 +39,7 @@ function signup () {
             userEmail: email,
             userPass: password,
             userCpass: cpassword,
-            dob:dob,
+            dob: dob,
         }
         for (let i = 0; i < users.length; i++) {
             if (users[i].userEmail === email) {
@@ -75,11 +75,11 @@ function login() {
     for (let i = 0; i < users.length; i++) {
 
         if (users[i].userEmail == LoginEmail && users[i].userPass == Loginpass) {
-            
-                isMatch = true
-                localStorage.setItem("LoginItem",JSON.stringify(users[i]))
-                window.location.href="./dashboard.html";
-            
+
+            isMatch = true
+            localStorage.setItem("LoginItem", JSON.stringify(users[i]))
+            window.location.href = "./dashboard.html";
+
         }
 
     }
@@ -90,10 +90,11 @@ function login() {
         }, 3000)
         return 0;
     }
-        
-                
+
+
 }
-function logout(){
+function logout() {
     localStorage.removeItem("LoginItem")
-    location.href="./index.html"
+    location.href = './index.html'
+    return
 }
