@@ -101,6 +101,6 @@ function login() {
 }
 function logout() {
     localStorage.removeItem("LoginItem")
-    location.href = '/index.html'
+    location.href = './index.html'
     return
 }
