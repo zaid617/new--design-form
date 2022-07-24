@@ -59,7 +59,7 @@ function signup() {
         users.push(newUser)
 
         localStorage.setItem("usersItem", JSON.stringify(users))
-        login.style.transform = "translateY(-500px)";
+        
     }
     else {
         error.style.display = 'block'
