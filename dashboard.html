@@ -10,14 +10,14 @@
 </head>
 
 <body onload="dashboard()">
-    <div class="main2">
+   <div class="main2">
         <fieldset>
             <legend>Dashboard</legend>
-            <form class="info">
+            <form class="info" onsubmit="logout(); return false">
                 <input class="text-info" readonly id="name2">
                 <input class="text-info" readonly id="number2">
                 <input class="text-info" readonly id="dob2">
-                <button class="btn" onclick="logout()">log out</button>
+                <button class="btn" type="submit">log out</button>
 
             </form>
         </fieldset>
