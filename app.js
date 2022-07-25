@@ -52,6 +52,7 @@ function signup() {
                 error2.style.display = 'block'
                 setTimeout(function () {
                     error2.style.display = 'none'
+                    number = ""
                 }, 3000)
                 return 0;
             }

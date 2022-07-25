@@ -113,15 +113,13 @@ button:hover {
 
 .error {
   display: none;
-  background-color: rgb(252, 223, 223);
   color: red;
-  width: 198px;
+  width: 208px;
   position: absolute;
-  top: 264px;
+  background-color: #e0dede;
+  top: 240px;
   left: 69px;
   padding: 5px;
-  border: 2px solid red;
-  border-radius: 5px;
   z-index: 10;
   text-align: center;
   font-weight: 600;
@@ -129,15 +127,13 @@ button:hover {
 
 .error2 {
   display: none;
-  background-color: rgb(252, 223, 223);
   color: red;
-  width: 198px;
+  background-color: #e0dede;
+  width: 208px;
   position: absolute;
-  top: 189px;
+  top: 166px;
   left: 66px;
   padding: 5px;
-  border: 2px solid red;
-  border-radius: 5px;
   z-index: 10;
   text-align: center;
   font-weight: 600;
@@ -145,15 +141,12 @@ button:hover {
 
 .error3 {
   display: none;
-  background-color: rgb(252, 223, 223);
   color: red;
   width: 198px;
   position: absolute;
   top: 209px;
   left: 69px;
   padding: 5px;
-  border: 2px solid red;
-  border-radius: 5px;
   z-index: 10;
   text-align: center;
   font-weight: 600;
