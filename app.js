@@ -60,6 +60,10 @@ function signup() {
         users.push(newUser)
 
         localStorage.setItem("usersItem", JSON.stringify(users))
+        login.style.transform="translateY(-500px)"
+         setTimeout(()=>{
+             login.style.transform=""
+        },12000)
         
     }
     else {

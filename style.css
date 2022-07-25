@@ -53,13 +53,13 @@ label {
 
 input {
   width: 60%;
-  height: 14px;
-  background: #e0dede;
+  height: 13px;
+  background: #e8f0fe;
   justify-content: center;
   display: flex;
   margin: 4px auto;
   padding: 10px;
-  border: none;
+  border: 1px solid black;
   outline: none;
   border-radius: 4px;
 }
@@ -74,7 +74,7 @@ button {
   background: #573b8a;
   font-size: 1em;
   font-weight: bold;
-  margin-top: 7px;
+  margin-top: 4px;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -88,7 +88,7 @@ button:hover {
 
 .login {
   height: 460px;
-  background: #eee;
+  background: #e8f0fe;
   border-radius: 60% / 10%;
   transform: translateY(-180px);
   transition: 0.8s ease-in-out;
@@ -116,26 +116,26 @@ button:hover {
   color: red;
   width: 208px;
   position: absolute;
-  background-color: #e0dede;
+  background-color: #e8f0fe;
   top: 240px;
   left: 69px;
   padding: 5px;
   z-index: 10;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 
 .error2 {
   display: none;
   color: red;
-  background-color: #e0dede;
+  background-color: #e8f0fe;
   width: 208px;
   position: absolute;
   top: 166px;
   left: 66px;
   padding: 5px;
   z-index: 10;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 
