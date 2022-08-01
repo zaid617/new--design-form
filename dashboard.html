@@ -10,18 +10,38 @@
 </head>
 
 <body onload="dashboard()">
-   <div class="main2">
-        <fieldset>
-            <legend>Dashboard</legend>
-            <form class="info" onsubmit="logout(); return false">
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form onsubmit="logout(); return false">
+                <label for="chk" aria-hidden="true">Dashboard</label>
                 <input class="text-info" readonly id="name2">
                 <input class="text-info" readonly id="number2">
                 <input class="text-info" readonly id="dob2">
                 <button class="btn" type="submit">log out</button>
-
             </form>
-        </fieldset>
+        </div>
+
+        <div class="login">
+            <form onsubmit="edit(); return false">
+                <label for="chk" aria-hidden="true">Edit info.</label>
+                <input type="text" id="firstName" placeholder="Enter New First Name"
+                    title="name does not contains a number" required>
+                <input type="text" id="surName" placeholder="Enter New Surname" title="name does not contains a number"
+                    required>
+                <input type="password" required placeholder="Enter New Password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <input type="password" required placeholder="Re-enter Your Password" id="cpassword"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <p id="error" class="error">* Password Does't Match</p>
+                <input type="date" required id="dob" placeholder="Enter New Date of Birth" value="1990-01-01">
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 
