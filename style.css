@@ -122,7 +122,8 @@ button:hover {
   padding: 5px;
   z-index: 10;
   text-align: left;
-  font-weight: 600;
+  /* font-weight: 600; */
+  
 }
 
 .error2 {
@@ -136,7 +137,7 @@ button:hover {
   padding: 5px;
   z-index: 10;
   text-align: left;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .error3 {
